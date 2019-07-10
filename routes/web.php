@@ -11,4 +11,10 @@
 |
 */
 
-Route::get('/', 'TokenizerController@index');
+Route::get('/', 'DashboardController@index')->name('home');
+Route::post('/', 'IndexesController@search')->name('search');
+
+Route::get('books/{id}/tokenizer', 'TokenizerController@index')->name('tokenizer');
+Route::get('indexes', 'IndexesController@setAll');
+Route::get('indexes/{id}', 'IndexesController@setOnlyBook');
+Route::get('bobot', 'IndexesController@bobot');

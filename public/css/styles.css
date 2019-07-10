@@ -1,0 +1,36 @@
+.searchform {
+    display: none;
+    padding: 8px 5px;
+    text-align: center;
+    position: relative;
+    transition: background-color 500ms linear;
+}
+
+.searchfield {
+    border: none;
+    background: none;
+    color: white;
+    outline: none;
+    border-bottom: 1px solid #757575;
+    width: 100%;
+}
+
+input::-webkit-input-placeholder {
+    color: white;
+}
+
+.submitbtn {
+    background: none;
+    border: none;
+    color: white;
+}
+
+.top {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.searchbtn {
+    display: inline-block;
+}
