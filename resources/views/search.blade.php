@@ -3,23 +3,6 @@
     <link href="{{ asset('css/agency.min.css') }}" rel="stylesheet" xmlns:v-bind="http://www.w3.org/1999/xhtml"
           xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml"
           xmlns:v-bind="http://www.w3.org/1999/xhtml">
-    <script src="{{ asset('js/agency.min.js') }}"></script>
-    <script>
-        function showModal($name, $synopsis, $image) {
-            $('#reviewNameBook').replaceWith($name);
-            $('#reviewSynopsisBook').replaceWith($synopsis);
-            $('#reviewImgBook').src($image);
-
-            $('#modalReview').modal('show');
-        };
-    </script>
-    <script>
-        $( document ).ready(function() {
-            $(".searchbtn").click(function(){
-                $(".searchform").slideToggle("0");
-            });
-        });
-    </script>
 @endpush
 @section('content')
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
@@ -126,4 +109,22 @@
         </div>
     </footer>
 @endsection
+@push('script')
+    <script src="{{ asset('js/agency.min.js') }}"></script>
+    <script>
+        function showModal($name, $synopsis, $image) {
+            $('#reviewNameBook').replaceWith($name);
+            $('#reviewSynopsisBook').replaceWith($synopsis);
+            $('#reviewImgBook').src($image);
 
+            $('#modalReview').modal('show');
+        };
+    </script>
+    <script>
+        $( document ).ready(function() {
+            $(".searchbtn").click(function(){
+                $(".searchform").slideToggle("0");
+            });
+        });
+       </script>
+@endpush
