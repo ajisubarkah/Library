@@ -12,11 +12,12 @@
         <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+        <script src="{{ asset('js/app.js') }}"></script>
         @stack('head')
     </head>
     <body id="app">
         @yield('content')
-        <script src="{{ asset('js/app.js') }}"></script>
+
         {{-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> --}}
         @stack('script')
     </body>
